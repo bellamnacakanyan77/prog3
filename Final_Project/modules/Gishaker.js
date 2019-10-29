@@ -1,7 +1,7 @@
 var LiveForm = require("./LiveForm");
 var random = require("./random.js");
 
-module.exports = class Titan extends LiveForm {
+module.exports = class Gishaker extends LiveForm {
     constructor(x, y) {
         super(x, y);
         this.life = 40;
@@ -51,9 +51,9 @@ module.exports = class Titan extends LiveForm {
 
             
 
-            for (let i in gishatichArr) {
-                if (gishatichArr[i].x == this.x && gishatichArr[i].y == this.y) {
-                    gishatichArr.splice(i, 1);
+            for (let i in gishakerArr) {
+                if (gishakerArr[i].x == this.x && gishakerArr[i].y == this.y) {
+                    gishakerArr.splice(i, 1);
                     this.x = x;
                     this.y = y;
                 }

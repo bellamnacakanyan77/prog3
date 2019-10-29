@@ -37,7 +37,7 @@ module.exports = class GrassEater extends LiveForm {
 
             // sarqum em OBJ lscnum grassArr-i mej 
             let grassEater = new GrassEater(x, y);
-            grassEaterArr.push(grassEater);
+            eatArr.push(grassEater);
 
             this.life = 0;
         }
@@ -60,7 +60,7 @@ module.exports = class GrassEater extends LiveForm {
 
             // sarqum em OBJ lscnum grassArr-i mej 
             let grassEater = new GrassEater(x, y);
-            grassEaterArr.push(grassEater);
+            eatArr.push(grassEater);
 
             for (let i in grassArr) {
                 if (grassArr[i].x == this.x && grassArr[i].y == this.y) {
@@ -103,8 +103,8 @@ module.exports = class GrassEater extends LiveForm {
         matrix[this.y][this.x] = 0;
 
         for (let i in grassEaterArr) {
-            if (grassEaterArr[i].x == this.x && grassEaterArr[i].y == this.y) {
-                grassEaterArr.splice(i, 1)
+            if (grassEaterArr[i].x == this.x && eatArr[i].y == this.y) {
+                eatArr.splice(i, 1)
             }
         }
     }

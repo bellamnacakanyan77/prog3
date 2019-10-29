@@ -1,7 +1,7 @@
 var LiveForm = require("./LiveForm");
 var random = require("./random.js");
 
-module.exports = class Terminator extends LiveForm {
+module.exports = class Stexcox extends LiveForm {
     constructor(x, y) {
         super(x, y);
         this.life = 20;
@@ -37,8 +37,8 @@ module.exports = class Terminator extends LiveForm {
             matrix[y][x] = 1;
 
             // sarqum em OBJ lscnum grassArr-i mej 
-            let gishatich = new Gishatich(x, y);
-            grassArr.push(gishatich);
+            let stexcox = new Stexcox(x, y);
+            grassArr.push(stexcox);
 
 
             this.multiply = 0;
